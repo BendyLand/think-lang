@@ -12,7 +12,7 @@ So what's the remaining solution? To create my own, of course!
 
 ## About
 
-*Think* is a general-purpose logic programming language with a focus on simplicity, built by someone who is (still) not a very experienced programmer, but who has always had a certain affinity for understanding and expressing logical concepts in the real world. Unlike my other language development project, *[Prog](../prog-lang/README.md)*, this is **not** a project made for the purpose of learning. Instead, I am viewing it as more of a chance for me to implement a tool that I don't see available in the current software landscape (which will happen to help me learn as I work on it... big difference).
+*Think* is a general-purpose logic programming language with a focus on simplicity, built by someone who is (still) not a very experienced programmer, but who has always had a certain affinity for understanding and expressing logical concepts in the real world. Unlike my other language development project, *[Prog](https://github.com/BendyLand/prog-lang)*, this is **not** a project made for the purpose of learning. Instead, I am viewing it as more of a chance for me to implement a tool that I don't see available in the current software landscape (which will happen to help me learn as I work on it... big difference).
 
 ## Name
 
