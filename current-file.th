@@ -1,0 +1,19 @@
+
+employer
+employee
+
+
+[ associate     <- employee,
+  manager       <- employee,
+  upper-manager <- employee,  
+  company       <- employer ] 
+
+
+employee = not employer 
+company = not employee  
+manages: A -> B = (A == upper-manager) or (A == manager and B == associate)
+    
+pays: A -> B = A == company and B == employee 
+  
+can_promote: A -> B = A > B and B != upper-manager
+    

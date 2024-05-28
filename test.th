@@ -1,0 +1,19 @@
+# Create data
+employer
+employee
+
+# Assign data to variables
+[ associate     <- employee,
+  manager       <- employee,
+  upper-manager <- employee,  
+  company       <- employer ] # including brackets here creates an implicit ordering between these (e.g. manager > associate)
+
+# Create rules for the data in variables
+employee = not employer # an employee cannot be the employer
+company = not employee  # the company cannot be an employee
+manages: A -> B = (A == upper-manager) or (A == manager and B == associate)
+    # (A manages B)  
+pays: A -> B = A == company and B == employee # Check against variables or data
+  # (A pays B)
+can_promote: A -> B = A > B and B != upper-manager
+    # (A can promote B)

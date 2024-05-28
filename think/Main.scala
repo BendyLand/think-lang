@@ -10,5 +10,7 @@ import parser.*
     val fileNoComments = removeComments(file)
     println(file)
     println(fileNoComments)
+    writeCurrentFile(fileNoComments)
 
     
+
