@@ -1,12 +1,13 @@
 package parser
 
-import scala.io.Source
-
-def readFile(path: String): String = 
-    Source
-        .fromFile(path)
-        .getLines()
-        .mkString("\n")
-
-def splitFileIntoLines(file: String): Array[String] = 
-    file.split("\n")
+def removeComments(file: String): String = 
+    val lines = file.split("\n")
+    var result = ""
+    lines.foreach { line =>
+        if line.contains("#") then
+            val index = line.indexOf('#')
+            result += line.substring(0, index) + "\n"
+        else
+            result += line + "\n"
+    }
+    result
