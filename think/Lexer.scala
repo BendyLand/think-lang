@@ -3,8 +3,8 @@ package lexer
 import scala.io.Source
 import java.io.PrintWriter
 
-def writeCurrentFile(file: String) = 
-    new PrintWriter("../current-file.th") { write(file); close() }
+def writeToFile(path: String, contents: String) = 
+    new PrintWriter(path) { write(contents); close() }
 
 def readFile(path: String): String = 
     Source

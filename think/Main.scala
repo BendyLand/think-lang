@@ -8,9 +8,9 @@ import parser.*
     println("\nHello Think!\n")
     val file = readFile("../test.th")
     val fileNoComments = removeComments(file)
-    println(file)
-    println(fileNoComments)
-    writeCurrentFile(fileNoComments)
+    val dataDefs = extractDataDefinitions(file)
+    println("Data definitions:")
+    dataDefs.foreach(println)
 
-    
-
+    writeToFile("../current-file.th", fileNoComments)
+    writeToFile("../data-definitions.th", dataDefs.mkString("\n"))

@@ -51,10 +51,10 @@ In addition to the "data" type, `Think` includes a variety of collection types. 
 
 While `Think` may not have a variety of data types, it will include several reserved keywords and symbols, which provide a significant amount of the functionality of the language. They will typically be used as a way to provide context to the data. For example:
 ```
-person                           # Create data
+person                            # Create data
 parent <- person                  # Create a fact for `parent`
 child <- person                   # Create a fact for `child`
-child = parent + distinct parent # Create a rule for `child`
+child = parent + distinct parent  # Create a rule for `child`
 ```
  - In the code above, we create some data `person` on line 1. This is basically just a constant that represents arbitrary data.
  - On the next line, we assign that data to a variable called `parent`. If you are familiar with logic programming, this is the equivalent of a "fact".
