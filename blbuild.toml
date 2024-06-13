@@ -1,4 +1,4 @@
 compiler = "scalac"
-path = ""
+path = "think"
 files = ["Main.scala", "Lexer.scala", "Parser.scala", "Tokens.scala"]
-extras = [""]
+extras = ["-d build"]
