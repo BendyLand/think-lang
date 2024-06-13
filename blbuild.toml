@@ -1,0 +1,4 @@
+compiler = "scalac"
+path = ""
+files = ["Main.scala", "Lexer.scala", "Parser.scala", "Tokens.scala"]
+extras = [""]
